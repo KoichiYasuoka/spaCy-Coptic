@@ -29,7 +29,7 @@ advcl ╚>╚═╔═════ NOUN  ϣⲏⲣⲉ
  nmod     ╚>╚═╚═ NOUN  ⲟⲩⲟⲉⲓⲛ
 ```
 
-`spacy_coptic.load(api)` loads spaCy Language pipeline for Coptic NLP WebAPI. If you have already installed [coptic-nlp](https://github.com/CopticScriptorium/coptic-nlp) and you have `coptic_nlp.py` in current directory, try the pipeline locally just as:
+`spacy_coptic.load(api)` loads spaCy Language pipeline for Coptic NLP WebAPI. If you have already installed [coptic-nlp](https://github.com/CopticScriptorium/coptic-nlp) and you have `coptic_nlp.py` in current directory, you can try the pipeline locally just as:
 
 ```py
 >>> import spacy_coptic
