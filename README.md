@@ -20,13 +20,13 @@
 5	ⲡ	ⲡ	DET	ART	_	6	det	_	SpaceAfter=No
 6	ⲟⲩⲟⲉⲓⲛ	ⲟⲩⲟⲉⲓⲛ	NOUN	N	_	3	nmod	_	_
 >>> import deplacy
->>> deplacy.render(doc)
-ⲙⲟⲟϣⲉ  VERB  ═════════╗ ROOT
-ϩⲱⲥ    CCONJ <══════╗ ║ mark
-ϣⲏⲣⲉ   NOUN  ═════╗═╝<╝ advcl
-ⲙ̄      ADP   <══╗ ║     case
-ⲡ      DET   <╗ ║ ║     det
-ⲟⲩⲟⲉⲓⲛ NOUN  ═╝═╝<╝     nmod
+>>> deplacy.render(doc,WordRight=True)
+ ROOT ╔═════════ VERB  ⲙⲟⲟϣⲉ
+ mark ║ ╔══════> CCONJ ϩⲱⲥ
+advcl ╚>╚═╔═════ NOUN  ϣⲏⲣⲉ
+ case     ║ ╔══> ADP   ⲙ̄
+  det     ║ ║ ╔> DET   ⲡ
+ nmod     ╚>╚═╚═ NOUN  ⲟⲩⲟⲉⲓⲛ
 ```
 
 `spacy_coptic.load(api)` loads spaCy Language pipeline for Coptic NLP WebAPI. If you have already installed [coptic-nlp](https://github.com/CopticScriptorium/coptic-nlp) and you have `coptic_nlp.py` in current directory, try the pipeline locally just as:
