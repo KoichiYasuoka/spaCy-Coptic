@@ -22,8 +22,7 @@ setuptools.setup(
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Operating System :: POSIX :: Linux",
-    "Topic :: Text Processing :: Linguistic",
-    "Natural Language :: Coptic",
+    "Topic :: Text Processing :: Linguistic"
   ],
   project_urls={
     "coptic-nlp":"https://github.com/CopticScriptorium/coptic-nlp",
