@@ -44,3 +44,7 @@ advcl ╚>╚═╔═════ NOUN  ϣⲏⲣⲉ
 pip3 install spacy_coptic --user
 ```
 
+## Installation for Google Colaboratory
+
+Try [notebook](https://colab.research.google.com/github/KoichiYasuoka/spaCy-Coptic/blob/master/spacy_coptic.ipynb).
+
