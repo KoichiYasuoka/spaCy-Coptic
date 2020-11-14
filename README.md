@@ -2,7 +2,7 @@
 
 # spaCy-Coptic
 
-[Coptic NLP](https://corpling.uis.georgetown.edu/coptic-nlp/) wrapper for spaCy
+[Coptic NLP](https://corpling.uis.georgetown.edu/coptic-nlp/) wrapper for [spaCy](https://spacy.io)
 
 ## Basic Usage
 
