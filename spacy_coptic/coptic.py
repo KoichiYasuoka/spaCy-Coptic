@@ -71,7 +71,8 @@ class CopticTokenizer(object):
           deps.append(r)
         else:
           i=s.find(' head="#u')
-          heads.append(0 if i<0 else int(s[i+9:s.index('"',i+10)])-int(id))
+          h=0 if i<0 else int(s[i+9:s.index('"',i+10)])-int(id)
+          heads.append(2**64+h if h<0 else h)
           deps.append(vs.add(dep))
         i=s.index(' pos="')
         xpos=s[i+6:s.index('"',i+7)]
