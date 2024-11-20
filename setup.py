@@ -6,7 +6,7 @@ URL="https://github.com/KoichiYasuoka/spaCy-Coptic"
 
 setuptools.setup(
   name="spacy_coptic",
-  version="0.7.5",
+  version="0.7.6",
   description="Coptic NLP wrapper for spaCy",
   long_description=long_description,
   long_description_content_type="text/markdown",
@@ -16,7 +16,7 @@ setuptools.setup(
   license="MIT",
   keywords="Coptic spaCy",
   packages=setuptools.find_packages(),
-  install_requires=["spacy>=2.2.2","deplacy>=2.0.2"],
+  install_requires=["spacy>=2.2.2","deplacy>=2.1.0"],
   python_requires=">=3.6",
   classifiers=[
     "License :: OSI Approved :: MIT License",
