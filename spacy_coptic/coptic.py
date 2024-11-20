@@ -91,7 +91,8 @@ class CopticTokenizer(object):
         pos.append(vs.add(upos))
         spaces.append(False)
       elif s.startswith("</norm_group>"):
-        spaces[-1]=True
+        if len(spaces)>0:
+          spaces[-1]=True
     doc=Doc(self.vocab,words=words,spaces=spaces)
     a=numpy.array(list(zip(lemmas,pos,tags,deps,heads,norms)),dtype="uint64")
     doc.from_array([LEMMA,POS,TAG,DEP,HEAD,NORM],a)
@@ -103,14 +104,14 @@ class CopticTokenizer(object):
     return doc
 
 class CopticWebAPI(object):
-  def __init__(self,api="https://corpling.uis.georgetown.edu/coptic-nlp/api"):
+  def __init__(self,api="https://tools.copticscriptorium.org/coptic-nlp/"):
     self.api=api
   def __call__(self,text):
     if text.strip()=="":
       return ""
     from urllib.request import urlopen
     from urllib.parse import quote
-    with urlopen(self.api+"?data="+quote(text)) as r:
+    with urlopen(self.api+"?dialect=auto&sgml_mode=sgml&tok=tok&norm=norm&tag=tag&lemma=lemma&parse=parse&data="+quote(text)) as r:
       return r.read().decode("utf-8")
 
 def load(api=None):
